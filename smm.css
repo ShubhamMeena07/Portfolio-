@@ -1,0 +1,370 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0 0 0 0;
+  padding:0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+
+
+
+}
+
+
+/*------------------------------------------------------
+------------------- for all general-------------------------------------
+------------------------------------------------------*/
+
+body{
+  font-family: serif;
+}
+a{
+  color:rgb(239, 251, 251);
+  text-decoration: none;
+}
+a:hover{
+  color:rgb(252, 254, 254);
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7{
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------
+------------------- header-------------------------------------
+------------------------------------------------------*/
+
+
+#header {
+ position:fixed;
+ top:0;
+ bottom: 0;
+ left: 0;
+ width: 300px;
+ transition:all;
+ padding:0 15px;
+ background:rgb(9, 9, 9)
+
+}
+#header .profile img{
+  margin:15px auto;
+  width:120px;
+  display:block;
+  border:8px solid rgb(86, 84, 82)
+}
+#header .profile h1{
+  text-align: center;
+}
+#header .profile h1 a{
+  color:aliceblue;
+  text-decoration: none;
+  font-size: 24px;
+  
+}
+#header .profile h1 a:hover{
+  color:aliceblue;
+  text-decoration: none;
+}
+
+
+#header .profile .social-links{
+  text-align: center;
+}
+#header .profile .social-links a{
+  font-size: 18px;
+  display:inline-block;
+  background:rgb(19, 18, 18);
+  color:rgb(221, 228, 232);
+  line-height: 1;
+  padding:0px 0px;
+  margin: 0px 4px 0px 0px;
+  border-radius: 50%;
+  text-align: center!important;
+  width: 36px;
+  height: 30px;
+  transition: 0.3s;
+
+}
+#header .profile .social-links a:hover{
+  background:#149ddd;/*----------update krna hai--->*/
+  color:aliceblue;
+  text-decoration: none;
+}
+
+
+#header{
+
+}
+
+/*-----------------------------------------------------------
+------------------- Navigation------------------------------
+--------------------------------------------------------------*/
+.navigation-menu{
+  padding:30px 0 0;
+
+}
+.navigation-menu *{
+  margin:0;
+  padding:0;
+  list-style: none;
+
+}
+
+.navigation-menu ul li{
+  position:relative;
+  white-space:nowrap;
+
+}
+
+.navigation-menu a,
+
+.navigation-menu a:focus{
+  display: flex;
+  align-items: baseline;
+  color:#a8a9b4;
+  padding:12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+
+}
+.navigation-menu a i,
+
+.navigation-menu a:focus i{
+  font-size: 24px;
+  padding-right: 8px;
+  color: #bec1e2;
+}
+.navigation-menu a:hover,
+.navigation-menu .active,
+.navigation-menu .active:focus,
+.navigation-menu li:hover a{
+  text-decoration: none;
+  color:#fff;
+}
+.navigation-menu a:hover i,
+.navigation-menu active i,
+.navigation-menu active:focus i,
+.navigation-menu li:hover a i{
+  color:#149ddd;
+}
+/*-----------------------------------------------------------
+------------------- home  ----------------------------
+--------------------------------------------------------------*/
+#home {
+  width: 101%;
+  height: 101vh;
+  background: url("images/img2.jpg") top center;
+  background-size: cover;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+ 
+  
+  
+
+ 
+ 
+}
+/*#home:before {                            
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+*/
+
+
+#home .home-container {
+  position: absolute;
+  z-index: 2;
+  min-width: 40px;
+}
+
+#home h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: rgb(248, 243, 243);
+}
+
+#home p {
+  color: rgb(185, 165, 165);
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#home p span {
+  color: rgb(237, 219, 219);
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+/*-----------------------------------------------------------
+-------------------about ------------------------------------
+-------------------------------------------------------------*/
+#about p{
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+  font-size: larger;
+
+  
+
+  
+}
+
+
+#about ul {
+  list-style: none;
+
+}
+#about ul li{
+  font-size: 19px;
+  font-weight: 900px;
+  font-family:poppins;
+  padding:10px 2px 10px 0px;
+}
+#about ul li i{
+  color:#149ddd
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------
+---------------------------   skills     --------------------
+--------------------------------------------------------------*/
+
+#skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+
+#skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+#skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+#skills .progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+
+#skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
+}
+/*-----------------------------------------------------------
+--------------------------- resume    --------------------
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------
+-------------------------portfolio    --------------------
+--------------------------------------------------------------*/
+
+#portfolio
+#portfolio
+#portfolio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------
+-------------------------Services   --------------------
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
