@@ -2,11 +2,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin:0 0 0 0;
+  margin:0;
   padding:0;
   outline: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  
 
 
 
@@ -22,8 +23,9 @@ body{
   font-family: serif;
 }
 a{
-  color:rgb(239, 251, 251);
-  text-decoration: none;
+  color:rgb(239, 251, 25, 34);
+  text-decoration : none;
+
 }
 a:hover{
   color:rgb(252, 254, 254);
@@ -181,13 +183,8 @@ h7{
   padding: 0 0 0 0;
   margin: 0 0 0 0;
  
-  
-  
-
- 
- 
 }
-/*#home:before {                            
+#home:before {                            
   content: "";
   background: rgba(5, 13, 24, 0.3);
   position: absolute;
@@ -197,7 +194,7 @@ h7{
   right: 0;
   z-index: 1;
 }
-*/
+
 
 
 #home .home-container {
@@ -255,28 +252,6 @@ h7{
   color:#149ddd
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------------------------------------------------
 ---------------------------   skills     --------------------
 --------------------------------------------------------------*/
@@ -318,53 +293,108 @@ h7{
 /*-----------------------------------------------------------
 --------------------------- resume    --------------------
 --------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  color: #050d18;
+}
 
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
 
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
 
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 
+.resume .resume-item ul {
+  padding-left: 20px;
+}
 
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
 
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+.resume .btn{
+  background-color: dodgerblue;
+  border: none;
+  padding: 12px 30px;
+  cursor:pointer;
+  font-size: 20px;
+}
+.resume .btn:hover{
+  background-color: royalblue;
+}
 
 /*-----------------------------------------------------------
--------------------------portfolio    --------------------
---------------------------------------------------------------*/
-
-#portfolio
-#portfolio
-#portfolio
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-----------------------------------------------------------
--------------------------Services   --------------------
+---------------------------------Form   --------------------
 --------------------------------------------------------------*/
 
 
+.container-form {
+  border-radius: 5px;
+  background-color: #f5eeee;
+  padding: 20px;
+}
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(97, 87, 87);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+input[type=submit] {
+  background-color: #04aaa2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+input[type=submit]:hover {
+  background-color: #457aa0;
+}
 
 
